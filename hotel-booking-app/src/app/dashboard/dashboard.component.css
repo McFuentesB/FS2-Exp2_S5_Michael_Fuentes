@@ -1,0 +1,181 @@
+/* Estilo principal del contenedor */
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f8f9fa; /* Fondo claro */
+  border: 1px solid #ddd; /* Borde sutil */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Título principal (Reservas) */
+h2 {
+  font-size: 2rem;
+  color: #0056b3; /* Azul profundo */
+  font-weight: 600;
+}
+
+/* Botón de cerrar sesión */
+button.btn-danger {
+  font-weight: 600;
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+button.btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* Botón para ir al perfil */
+button.btn-profile {
+  font-weight: 600;
+  background-color: #007bff; /* Azul similar al de botones de acción */
+  border: none;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+button.btn-profile:hover {
+  background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+}
+
+/* Tarjetas de habitación */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más fuerte al pasar el ratón */
+}
+
+/* Encabezado de la tarjeta */
+.card-header {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem;
+}
+
+/* Cuerpo de la tarjeta */
+.card-body {
+  padding: 1rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Botón de hacer reserva */
+button.btn-success {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+button.btn-success:hover {
+  background-color: #218838;
+}
+
+/* Espaciado entre tarjetas */
+.card.mb-3 {
+  margin-bottom: 1.5rem;
+}
+
+/* Estilo del contenedor de los botones de acción */
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+/* Estilo para la galería de imágenes */
+.room-gallery {
+  position: relative;
+  height: 300px; /* Definir un tamaño fijo para las imágenes */
+  overflow: hidden;
+}
+
+.room-gallery img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen ocupe el espacio sin distorsionarse */
+  animation: fadeInOut 9s infinite; /* Animación de desvanecimiento */
+}
+
+/* Animación de desvanecimiento de las imágenes */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Botones */
+.btn-profile {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-profile:hover {
+  background-color: #0056b3;
+}
+
+/* Botón de cerrar sesión */
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 4px;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* Tarjetas de habitación */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón de hacer reserva */
+button.btn-success {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 4px;
+}
+
+button.btn-success:hover {
+  background-color: #218838;
+}

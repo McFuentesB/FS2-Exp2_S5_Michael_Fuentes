@@ -1,0 +1,87 @@
+/* Estilo principal del contenedor */
+.container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f8f9fa; /* Fondo claro */
+  border: 1px solid #ddd; /* Borde sutil */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Título */
+h2 {
+  text-align: center;
+  color: #0056b3; /* Azul profundo */
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+/* Estilo para las etiquetas */
+label {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.5rem;
+  display: block; /* Forzar que las etiquetas estén arriba del input */
+}
+
+/* Inputs */
+input.form-control {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+input.form-control:focus {
+  border-color: #0056b3; /* Azul al enfocar */
+  outline: none; /* Quitar el borde predeterminado */
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.2); /* Resplandor azul */
+}
+
+/* Botones */
+button.btn {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* Botón primario */
+button.btn-primary {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+}
+
+button.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Botón secundario */
+button.btn-secondary {
+  background-color: #6c757d;
+  border: none;
+  color: #fff;
+  margin-top: 0.5rem;
+}
+
+button.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+/* Espaciado entre campos */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+/* Mensajes de validación */
+.validation-error {
+  color: #d9534f; /* Rojo claro */
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+  display: block;
+}

@@ -1,0 +1,75 @@
+/* Estilo principal del contenedor */
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f8f9fa; /* Fondo claro */
+  border: 1px solid #ddd; /* Borde sutil */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Título principal (Perfil) */
+h2 {
+  font-size: 2rem;
+  color: #0056b3; /* Azul profundo */
+  font-weight: 600;
+}
+
+/* Estilo del formulario */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+/* Entrada de texto */
+input.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.25rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Botón de actualizar */
+button.btn-success {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+button.btn-success:hover {
+  background-color: #218838;
+}
+
+/* Botón "Volver al Dashboard" */
+button.btn-link {
+  background: none;
+  border: none;
+  color: #007bff;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+button.btn-link:hover {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+/* Asegura que los botones tienen margen para separarse del formulario */
+button + button {
+  margin-top: 1rem;
+}
+
+/* Estilo del contenedor de los botones de acción */
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}

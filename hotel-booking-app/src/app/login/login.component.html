@@ -1,0 +1,19 @@
+<div class="container">
+  <h2>Login</h2>
+  <form (submit)="onLogin()">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input id="username" type="text" [value]="username" (input)="onInput($event, 'username')" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input id="password" type="password" [value]="password" (input)="onInput($event, 'password')" class="form-control" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Login</button>
+  </form>
+
+  <a href="/recuperar">¿Olvidaste tu contraseña?</a>
+  <a href="/registro">Registrate</a>
+</div>

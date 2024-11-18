@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2>Reservas</h2>
+    <!-- Botón de Cerrar Sesión -->
+    <button class="btn btn-danger" (click)="logout()">Cerrar Sesión</button>
+    <!-- Botón para ir al Perfil -->
+    <button class="btn btn-profile" (click)="goToPerfil()">Mi Perfil</button> <!-- Nuevo botón -->
+  </div>
+  <div *ngFor="let room of rooms" class="card mb-3">
+    <div class="card-header">
+      {{ room.name }}
+    </div>
+    <div class="card-body">
+      <p><strong>Descripción:</strong> {{ room.description }}</p>
+      <p><strong>Precio:</strong> ${{ room.price }}</p>
+      <button class="btn btn-success" (click)="makeReservation(room)">Hacer Reserva</button>
+    </div>
+  </div>
+</div>
+ 

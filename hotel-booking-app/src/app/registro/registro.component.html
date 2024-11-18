@@ -1,0 +1,72 @@
+<div class="container">
+  <h2>Registro</h2>
+  <form (submit)="onRegister()">
+    <!-- Campos del formulario -->
+    <div class="form-group">
+      <label for="username">Nombre de usuario</label>
+      <input
+        id="username"
+        type="text"
+        [value]="username"
+        (input)="onInput($event, 'username')"
+        class="form-control"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Correo electrónico</label>
+      <input
+        id="email"
+        type="email"
+        [value]="email"
+        (input)="onInput($event, 'email')"
+        class="form-control"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="password">Contraseña</label>
+      <input
+        id="password"
+        type="password"
+        [value]="password"
+        (input)="onInput($event, 'password')"
+        class="form-control"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="confirmPassword">Confirmar contraseña</label>
+      <input
+        id="confirmPassword"
+        type="password"
+        [value]="confirmPassword"
+        (input)="onInput($event, 'confirmPassword')"
+        class="form-control"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="birthdate">Fecha de nacimiento</label>
+      <input
+        id="birthdate"
+        type="date"
+        [value]="birthdate"
+        (input)="onInput($event, 'birthdate')"
+        class="form-control"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary">Registrar</button>
+      <button type="button" class="btn btn-secondary" (click)="clearForm()">Limpiar formulario</button>
+      <!-- Botón para ir al login -->
+      <button type="button" class="btn btn-link" (click)="goToLogin()">¿Ya tienes cuenta? Inicia sesión</button>
+    </div>
+  </form>
+</div>
